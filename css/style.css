@@ -1,0 +1,257 @@
+header nav.navbar, header nav.bg-light {
+  padding-top: 0%;
+  --bs-bg-opacity: none;
+}
+header nav.navbar div.container-fluid, header nav.bg-light div.container-fluid {
+  background: linear-gradient(to bottom, #00ccff, #f700ff);
+}
+header nav.navbar div.container-fluid div ul li ul.dropdown-menu.show, header nav.bg-light div.container-fluid div ul li ul.dropdown-menu.show {
+  background-color: transparent;
+  border: none;
+}
+header nav.navbar div.container-fluid div ul li ul.dropdown-menu.show li a.first-dropdown, header nav.bg-light div.container-fluid div ul li ul.dropdown-menu.show li a.first-dropdown {
+  background: linear-gradient(to bottom, #00ccff, #f700ff);
+}
+header nav.navbar div.container-fluid div ul li ul.dropdown-menu.show li a.second-dropdown, header nav.bg-light div.container-fluid div ul li ul.dropdown-menu.show li a.second-dropdown {
+  background: #f700ff;
+}
+@media screen and (max-width: 480px) {
+  header nav.navbar div.container-fluid div ul li ul.dropdown-menu.show li a.first-dropdown {
+    background: linear-gradient(to bottom, #726dff, #9d4aff);
+  }
+  header nav.navbar div.container-fluid div ul li ul.dropdown-menu.show li a.second-dropdown {
+    background: #9d4aff;
+  }
+}
+
+body {
+  background-image: url(../images/alt_bg.png);
+}
+
+footer.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: "DolceVita";
+  src: url("/fonts/DolceVitaHeavyBold.ttf");
+}
+section.Inicio {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+section.Inicio h2.titulos {
+  font-family: "DolceVita";
+  text-shadow: #5973f7 1.25px 1.25px;
+}
+
+section.segunda {
+  margin-top: 39.5px;
+}
+section.segunda img {
+  display: block;
+  margin: auto;
+  width: 160px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+div.container {
+  margin-top: 20px;
+}
+div.container div div h3.titulos-novedades {
+  color: #fc1297;
+  background-color: #5973f7;
+  text-align: center;
+}
+div.container div div h5 {
+  text-align: center;
+  color: #fc1297;
+  background-color: yellow;
+}
+div.container div div p.texto-novedades {
+  text-align: center;
+}
+div.container div div h6 {
+  background-color: yellow;
+}
+
+@font-face {
+  font-family: "DolceVita";
+  src: url("/fonts/DolceVitaHeavyBold.ttf");
+}
+h2.titulos, h2.contacto-titulo {
+  font-family: "DolceVita";
+  text-shadow: #5973f7 1.25px 1.25px;
+  margin-top: 15px;
+}
+
+section.contact-content {
+  display: flex;
+  justify-content: center;
+}
+
+div p.tarjeta {
+  display: block;
+  margin: auto;
+  margin-right: 15px;
+  color: #d8269d;
+  text-shadow: #5973f7 0.5px 0.5px;
+  text-align: right;
+}
+
+section.lanzamiento p.text-historia img.img-estudio {
+  width: 400px;
+  float: left;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+section.lanzamiento p.text-historia p.text-margin {
+  margin-top: 5px;
+}
+
+section.artist-content {
+  display: grid;
+  grid-template-rows: repeat(2, 250px);
+  grid-template-columns: repeat(3, 250px);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 15px;
+}
+section.artist-content div.art a {
+  text-decoration-line: none;
+}
+section.artist-content div.art p {
+  font-family: "DolceVita";
+  text-shadow: #5973f7 1.25px 1.25px;
+}
+section.artist-content div.art img {
+  width: 200px;
+  border-radius: 100%;
+  transition-property: all;
+  transition-duration: 1s;
+}
+section.artist-content div.art img:hover {
+  transform: scale(1.07);
+}
+@media screen and (max-width: 480px) {
+  section.artist-content {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+
+/* INICIO */
+section.segunda div h2.titulos {
+  font-family: "DolceVita";
+  color: #fc1297;
+  text-shadow: #5973f7 1.25px 1.25px;
+}
+section.segunda div h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d8269d;
+  margin-top: 3.5px;
+  text-shadow: #5973f7 0.5px 0.5px;
+  text-align: center;
+}
+section.segunda div p.text-lanzamiento {
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #d8269d;
+  text-shadow: #5973f7 0.5px 0.5px;
+}
+
+/*HISTORIA*/
+section.lanzamiento p.text-historia {
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #d8269d;
+  text-shadow: #5973f7 0.5px 0.5px;
+  text-align: justify;
+}
+
+section.lanzamiento p.margin-text {
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #d8269d;
+  text-shadow: #5973f7 0.5px 0.5px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+section.lanzamiento p.text-historia img.img-estudio {
+  float: left;
+  width: 300px;
+  border: 10px solid #5973f7;
+  margin-top: 30px;
+}
+
+section.staff {
+  display: flex;
+  flex-wrap: wrap;
+  width: 692px;
+  margin-left: 24.2%;
+}
+
+section.artist-content div.art p, h2.titulos, h2.contacto-titulo, div.container div div h6, div.container div div h5, section.Inicio h2.titulos {
+  color: #fc1297;
+  text-align: center;
+}
+
+section.Inicio h2.titulos {
+  text-shadow: #5973f7 1.25px 1.25px;
+}
+
+div.container div div h5 {
+  background-color: yellow;
+}
+
+div.container div div h6 {
+  background-color: yellow;
+}
+
+h2.titulos, h2.contacto-titulo {
+  text-shadow: #5973f7 1.25px 1.25px;
+  margin-top: 15px;
+}
+
+section.artist-content div.art p {
+  text-shadow: #5973f7 1.25px 1.25px;
+}
+
+section.artist-content, section.lanzamiento, .contacto-titulo, .contact-content, section.Inicio, section.segunda, div.container {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+@import '../base/variables';
+
+
+section.artist-content{
+    display: grid;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(3, 250px);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding:15px;
+    div.art{
+        
+        a {
+            text-decoration-line: none;
+        }
+        p{
+            font-family: 'DolceVitaBold';
+            text-shadow: $shadow-title-color;
+        }
+        img{
+            width: 200px;
+            border-radius: 100%;
+            transition-property: all;
+            transition-duration: 1s;
+            &:hover{
+                transform: scale(1.07);
+        }
+        }
+    }
+    @media screen and (max-width:480px){
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        }
+}

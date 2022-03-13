@@ -1,0 +1,239 @@
+/* Propiedades generales de todas las páginas */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'Dolce Vita Bold';
+    src: url(../fonts/Dolce\ Vita\ Heavy\ Bold.ttf);
+}
+
+body {
+    background-image: url(../images/alt_bg.png);
+}
+
+
+/* Modificaciones para el Navbar */
+
+.navbar {
+    padding-top:0%;
+}
+
+.container-fluid {
+    background: linear-gradient(to bottom, rgb(0, 204, 255), rgb(247, 0, 255));
+    font-family: 'Dolce Vita Bold';
+}
+
+.first-dropdown {
+    background: linear-gradient(to bottom, rgb(0, 204, 255), rgb(247, 0, 255));
+}
+
+.second-dropdown {
+    background: rgb(247, 0, 255);
+}
+
+.dropdown-menu.show {
+    background-color: transparent;
+    border: none;
+}
+
+.bg-light {
+    --bs-bg-opacity: none;
+}
+
+
+/* Propiedades del Index */
+
+h2{
+    text-align: center;
+}
+
+.YouTube {
+    width: 560px;
+    height: 315px;
+}
+
+p, h6 {
+    font-family: 'Dolce Vita Bold';
+}
+
+.Inicio {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.segunda {
+    margin-top: 39.5px;
+}
+
+.titulos, .artist-content .art p {
+    font-family: 'Dolce Vita Bold';
+    color: #fc1297;
+    text-shadow: #5973f7 1.25px 1.25px;
+}
+
+.segunda img {
+    display:block;
+    margin:auto;
+    width: 160px;
+}
+
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#d8269d;
+    margin-top: 3.5px;
+    text-shadow: #5973f7 0.5px 0.5px;
+    text-align: center;
+}
+
+.text-lanzamiento, .text-historia {
+    margin-left: 25%;
+    margin-right: 25%;
+    color:#d8269d;
+    text-shadow: #5973f7 0.5px 0.5px;
+}
+
+
+/* Page: novedades */
+
+.titulos-novedades {
+    color: #fc1297;
+    background-color: #5973f7;
+}
+
+h5, h6 {
+    text-align: center;
+    color: #fc1297;
+    background-color: yellow;
+}
+
+.texto-novedades {
+    text-align: center;
+}
+
+.footer-novedades {
+    margin-left: 115px;
+}
+
+
+/* Page: contacto */
+
+.contacto-titulo {
+    margin-top: 15px;
+}
+
+.tarjeta {
+    display:block;
+    margin:auto;
+    margin-right:15px;
+    color:#d8269d;
+    text-shadow: #5973f7 0.5px 0.5px;
+    text-align: right;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    position:relative;
+    min-width: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Page: artistas */
+
+.artist-content{
+    display: grid;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(3, 250px);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding:15px;
+}
+
+.art img {
+    width: 200px;
+    border-radius: 100%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.art img:hover {
+    transform: scale(1.07);
+}
+
+.artist-content .art p{
+    text-align: center;
+}
+
+/**/
+.cuadro-catalogo {
+    display:block;
+}
+
+
+/* Versión Mobile */
+
+@media screen and (max-width:480px){
+
+
+/* Modificación mobile de navbar */
+
+.first-dropdown {
+    background: linear-gradient(to bottom, rgb(114, 109, 255), rgb(157, 74, 255));
+}
+
+.second-dropdown {
+    background: rgb(157, 74, 255);
+}
+
+/* Index */ 
+
+    .YouTube {
+        width: 423px;
+        height: 237px;
+    }
+
+
+/* Page: artists */
+
+    .artist-content{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    }
+
+
+    /* Page: contact */
+
+    .contact-content {
+        display:block;
+    }
+
+    .tarjeta {
+        display:block;
+        color:#d8269d;
+        text-shadow: #5973f7 0.5px 0.5px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .mapa {
+        display: block;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .columna-uno, .columna-dos {
+        flex:auto;
+    }
+}

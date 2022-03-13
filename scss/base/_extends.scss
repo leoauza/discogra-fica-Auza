@@ -1,0 +1,47 @@
+%general-text {
+    color:#fc1297;
+    text-align: center;
+}
+
+section.Inicio h2.titulos {
+    text-shadow: #5973f7 1.25px 1.25px;
+    @extend %general-text;
+  }
+
+  div.container div div h5 {
+    background-color: yellow;
+    @extend %general-text;
+  }
+  
+  div.container div div h6 {
+    @extend %general-text;
+    background-color: yellow;
+  }
+  
+  h2.titulos, h2.contacto-titulo {
+    text-shadow: #5973f7 1.25px 1.25px;
+    margin-top: 15px;
+    @extend %general-text;
+  }
+  
+  section.artist-content div.art p {
+    text-shadow: #5973f7 1.25px 1.25px;
+    @extend %general-text;
+  }
+
+  %transition-effect {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  section.Inicio, section.segunda, div.container{
+    @extend %transition-effect;
+  }
+
+
+
+  section.artist-content, section.lanzamiento, .contacto-titulo, .contact-content{
+    @extend %transition-effect;
+  }
+

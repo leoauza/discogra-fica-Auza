@@ -1,0 +1,24 @@
+@import '../base/variables';
+@import '../base/effects';
+@font-face {
+    font-family: 'DolceVita';
+    src: url('/fonts/DolceVitaHeavyBold.ttf');
+};
+
+section.Inicio{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    h2.titulos{
+        font-family: 'DolceVita';
+        text-shadow: $shadow-title-color;
+    }
+}
+section.segunda {
+    margin-top: 39.5px;
+    img {
+        display:block;
+        margin:auto;
+        width: 160px;
+    }
+}

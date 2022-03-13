@@ -1,0 +1,49 @@
+@import '../base/maps';
+
+header{
+    nav.navbar, nav.bg-light{
+        padding-top:0%;
+        --bs-bg-opacity: none;
+        div.container-fluid {
+            background: linear-gradient(to bottom, rgb(0, 204, 255), rgb(247, 0, 255));
+                div{
+                    ul{
+                        li{
+                            ul.dropdown-menu.show{
+                                background-color: transparent;
+                                border: none;
+                                li a.first-dropdown{
+                                    background: map-get($header, backcolormap);
+                            }
+                                li a.second-dropdown{
+                                    background: rgb(247, 0, 255);
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        nav.navbar{
+            div.container-fluid {
+                    div{
+                        ul{
+                            li{
+                                ul.dropdown-menu.show{
+                                    li a.first-dropdown{
+                                        background: linear-gradient(to bottom, rgb(114, 109, 255), rgb(157, 74, 255));
+                                }
+                                    li a.second-dropdown{
+                                        background: rgb(157, 74, 255);
+                                    }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

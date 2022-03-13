@@ -1,0 +1,26 @@
+@import '../base/variables';
+@import '../base/effects';
+
+div.container{
+    margin-top: 20px;
+    div{
+        div{
+            h3.titulos-novedades{
+                color: $title-color;
+                background-color: $title-bg-color;
+                text-align: center;
+            }
+            h5{
+                text-align: center;
+                color: $title-color;
+                background-color:$title-bg-color-v2;
+            }
+            p.texto-novedades {
+                text-align: center;
+            }
+            h6{
+                background-color: $title-bg-color-v2;
+            }
+        }
+    }
+}
